@@ -19,31 +19,39 @@
   </head>
   <body>
     <div class="container"><h1>Shopping cart</h1></div>
-    <div class="container">
-      <div class="row item">
+    <div class="container" id="maintable">
+      <div class="row" id ="columnames">
         <div class="col-sm-2"><h3>Name</h3></div>
         <div class="col-sm-2"><h3>Price($)</h3></div>
         <div class="col-sm-2"><h3>Quantity</h3></div>
         <div class="col-sm-2"><h3>Remove</h3> </div>
         <div class="col-sm-2"><h3>Total</h3></div>
       </div>
-      <div class="row item">
+      <div class="row product">
         <div class="name col-sm-2">Example 1</div>
-        <div class="unitprice col-sm-2">$exmaple</div>
+        <div class="unitprice col-sm-2">22</div>
+        <div class="quantity col-sm-2"><input type="number" value="3"/></div>
+        <div class="remove col-sm-2"><button class="btn btn-light btn-sm button remove">remove</button></div>
+        <div class="subtotal col-sm-2"></div>
+      </div>
+      <div class="row product">
+        <div class="name col-sm-2">Example 1</div>
+        <div class="unitprice col-sm-2">3</div>
         <div class="quantity col-sm-2"><input type="number" value="3" /></div>
         <div class="remove col-sm-2"><button class="btn btn-light btn-sm button remove">remove</button></div>
-        <div class="total col-sm-2">xxxx$</div>
+        <div class="subtotal col-sm-2"></div>
       </div>
-      <div class="row item new">
+    </div>
+    <div class="container">
+      <div class="row" id = "itemnew">
         <div class="nameadd col-sm-2"><input type="text" value="Item" /></div>
         <div class="unitpriceadd col-sm-2"><input type="number" value="2" /></div>
-        <div class="col-sm-2"><button class="btn btn-light btn-sm button add">add item</button></div>
+        <div class="col-sm-2"><button class="btn btn-light btn-sm" id="buttonadd">add item</button></div>
       </div>
     </div>
     <div class="container">
       <div class="row total">
-        <div class="col-sm-2"><h2>Total Price</h2></div>
-        <div class="col-sm-2"><h2>$</h2></div>
+        <div class="col-sm-2"> <h3>Total price: $ <span id="totalprice"></span></h3></div>
       </div>
     </div>
   </body>

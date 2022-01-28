@@ -1,6 +1,9 @@
 input {
     width: 110px;
+    height: 25px;
   }
 .button {
     width: 110px;
+    height: 25px;
+    text-align: center;
   }  
